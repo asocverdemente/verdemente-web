@@ -22,3 +22,4 @@ Puede alojarse gratuitamente en GitHub Pages o Cloudflare Pages.
 
 ## Idiomas
 Versión española en desarrollo. Estructura preparada para futuras versiones EN / FR / PT.
+
