@@ -1,9 +1,24 @@
 # VerdeMente web institucional
 
-Primera versión estática de la web institucional de la Asociación VerdeMente.
+Versión estática de la web institucional de la Asociación VerdeMente.
+
+## Estructura principal
+- Inicio
+- VerdeMente
+  - Quiénes somos
+  - Misión y objetivos
+  - Trayectoria y memoria
+  - Equipo / Junta Directiva
+  - Redes y colaboraciones
+  - Contacto
+- Áreas de trabajo
+- Proyectos
+- Agenda
+- Actualidad
+- Transparencia
 
 ## Publicación
 Puede alojarse gratuitamente en GitHub Pages o Cloudflare Pages.
 
 ## Idiomas
-Versión española inicial. Arquitectura preparada para futuras versiones EN / FR / PT.
+Versión española en desarrollo. Estructura preparada para futuras versiones EN / FR / PT.
