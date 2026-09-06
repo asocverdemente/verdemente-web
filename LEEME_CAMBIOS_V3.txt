@@ -1,0 +1,13 @@
+CAMBIOS V3 · VERDEMENTE WEB
+
+1. Sustituir index.html y styles.css por estos archivos.
+2. Sustituir jornadas-arte-patrimonio-dehesa.html por la nueva versión.
+3. El resto de archivos del pack se mantienen para que puedas subir todo el ZIP si prefieres.
+
+CAMBIOS PRINCIPALES
+- Se recupera la portada anterior: fondo negro/tierra, gran titular “Territorio, conocimiento, cultura y aprendizaje” y navegación completa.
+- Se elimina la imagen oscura del primer hero. La primera fotografía aparece ahora como imagen real y visible en la sección Saberes del Territorio.
+- Se restaura el menú: Inicio · VerdeMente · Áreas de trabajo · Proyectos · Agenda · Actualidad · Transparencia.
+- Se añade en la portada una sección completa de Jornadas de Arte y Patrimonio en la Dehesa con todo el programa y enlace a su página propia.
+- La página específica de Jornadas incluye el programa completo, la comida con precio subvencionado de 10 €, el vínculo con Saberes del Territorio y el acceso a la inscripción del taller de campanas.
+- Se mantiene la estética negra/óxido de Saberes del Territorio.
