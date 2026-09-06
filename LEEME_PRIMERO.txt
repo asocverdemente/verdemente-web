@@ -1,0 +1,39 @@
+PAQUETE WEB VERDEMENTE · ESTÉTICA SABERES DEL TERRITORIO
+
+ARCHIVOS QUE SUSTITUYEN A LOS ACTUALES:
+- index.html
+- saberes-del-territorio.html
+- styles.css
+
+ARCHIVOS NUEVOS:
+- inscripcion-campanas.html
+- jornadas-arte-patrimonio-dehesa.html
+- assets/logo-verdemente.png
+- google-apps-script.gs (NO se sube a GitHub; se pega en Google Apps Script)
+
+1) SUBIR A GITHUB
+En el repositorio asocverdemente/verdemente-web, sube index.html, saberes-del-territorio.html y styles.css sustituyendo los existentes. Sube también los dos HTML nuevos y crea/sube la carpeta assets con logo-verdemente.png.
+
+2) CREAR LA TABLA DE INSCRIPCIONES
+- Crea una Hoja de cálculo de Google nueva (por ejemplo: "Inscripciones Saberes del Territorio 2026").
+- En la hoja: Extensiones > Apps Script.
+- Borra el contenido inicial y pega todo el contenido de google-apps-script.gs.
+- Guardar.
+- Implementar > Nueva implementación > Aplicación web.
+- Ejecutar como: tú.
+- Quién tiene acceso: cualquiera.
+- Implementar y copiar la URL que termina en /exec.
+
+3) CONECTAR EL FORMULARIO
+Abre inscripcion-campanas.html y sustituye exactamente:
+PEGA_AQUI_LA_URL_DE_APPS_SCRIPT
+por la URL /exec que te dio Google.
+Sube de nuevo ese archivo a GitHub.
+
+Cada inscripción aparecerá automáticamente como una fila de la pestaña "Inscripciones". Desde Google Sheets puedes usar Archivo > Descargar > Microsoft Excel (.xlsx).
+
+4) EVENTOS UEx
+Cuando tengas creada la ficha en Eventos UEx, podemos añadir en Saberes del Territorio un segundo botón con el enlace institucional. No hace falta duplicar los datos en el formulario HTML.
+
+WEB PUBLICADA:
+https://asocverdemente.github.io/verdemente-web/
