@@ -9,6 +9,7 @@ function doPost(e) {
       'Nombre y apellidos', 'Correo electrónico', 'Teléfono',
       'Municipio', 'Información próximos talleres', 'Privacidad'
     ]);
+    sheet.setFrozenRows(1);
   }
 
   sheet.appendRow([
