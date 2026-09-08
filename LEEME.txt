@@ -1,0 +1,12 @@
+ARCHIVOS PARA GITHUB
+====================
+1. Sustituir inscripcion-campanas.html
+2. Sustituir inscripcion-alfareria.html
+3. Subir como archivo nuevo proteccion-datos.html en la raíz del repositorio
+
+NO SUBIR A GITHUB COMO PARTE NECESARIA DEL FORMULARIO
+=====================================================
+apps-script-formularios.gs contiene el código actualizado para Google Apps Script.
+Hay que copiarlo en el Apps Script conectado a la hoja de inscripciones y volver a desplegar una nueva versión de la aplicación web.
+
+El endpoint de form-config.js puede seguir siendo el mismo si se edita la implementación existente.
