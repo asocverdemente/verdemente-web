@@ -1,0 +1,16 @@
+VERDEMENTE WEB — ACTUALIZACIÓN 11/09/2026
+
+Cambios incluidos:
+- Campanas: Sierra de Fuentes y sin referencias a Eventos UEx.
+- Enlace a Jornadas de Arte y Patrimonio en la Dehesa mantenido.
+- "Piedra seca" pasa a "Construcción en piedra seca".
+- "Adobe y arquitectura de tierra" pasa visualmente a "Construcción en tierra". Fecha confirmada: 21 noviembre 2026 · Alcuéscar.
+- "Elaboración artesanal de queso": fecha confirmada 19 diciembre 2026 · Casar de Cáceres.
+- "Agricultura tradicional y memoria alimentaria": Montánchez.
+- "Micología y hierbas comestibles": Cáceres o Malpartida de Cáceres, municipio aún por confirmar.
+- Se mantiene la formulación "siete acciones en siete municipios".
+- Agenda y Actualidad actualizadas.
+- Página principal actualizada con las fechas confirmadas.
+- La antigua página de apicultura redirige a elaboración artesanal de queso.
+
+Sustituir en GitHub los archivos homónimos por estos. El archivo adobe-y-arquitectura-de-tierra.html conserva su nombre de archivo para no romper enlaces, aunque el título visible pasa a ser Construcción en tierra.
