@@ -1,0 +1,27 @@
+CORRECCIONES PREPARADAS PARA VERDEMENTE WEB - 11/09/2026
+
+1. Toque Manual de Campanas: Torrequemada -> Sierra de Fuentes.
+2. Se eliminan botones y menciones a Eventos UEx de las páginas de Campanas, Alfarería y sus formularios.
+3. Se mantiene/enlaza la página Jornadas de Arte y Patrimonio en la Dehesa desde Campanas y formulario.
+4. Apicultura y cultura de la miel se sustituye por Elaboración artesanal de queso, en Casar de Cáceres.
+5. Agricultura tradicional y memoria alimentaria pasa de Casar de Cáceres a Montánchez.
+6. Se actualizan Agenda y Actualidad para no mostrar información antigua.
+7. La antigua página apicultura-y-cultura-de-la-miel.html queda como redirección al nuevo taller de queso.
+
+IMPORTANTE: con estas instrucciones, Micología y hierbas comestibles y Agricultura tradicional y memoria alimentaria figuran ambas en Montánchez. Por eso se ha cambiado provisionalmente en la cabecera del proyecto “siete acciones en siete municipios” por “siete acciones en distintos municipios”. Si debe mantenerse estrictamente un municipio diferente por cada taller, hay que decidir una nueva localidad para uno de esos dos talleres antes de la difusión definitiva.
+
+Archivos nuevos:
+- elaboracion-artesanal-de-queso.html
+
+Archivos a sustituir:
+- saberes-del-territorio.html
+- toque-manual-de-campanas.html
+- alfareria.html
+- inscripcion-campanas.html
+- inscripcion-campanas-corregido.html
+- inscripcion-alfareria.html
+- agricultura-tradicional-y-memoria-alimentaria.html
+- agenda.html
+- actualidad.html
+- jornadas-arte-patrimonio-dehesa.html
+- apicultura-y-cultura-de-la-miel.html (redirección)
