@@ -1,0 +1,9 @@
+ACTUALIZACION ALFARERIA - 12/09/2026
+
+Se incorpora a alfareria.html el programa remitido por el alfarero:
+- Preparacion y trabajo de la arcilla local.
+- Actividades practicas y participativas para los asistentes.
+- Trabajo y experimentacion en el torno de alfareria durante toda la jornada.
+- Acompanamiento y explicacion de las diferentes tecnicas.
+
+NOTA DE CONTROL: el texto remitido por el alfarero dice "Dia 10 de octubre", mientras que la fecha confirmada actualmente en la web y el formulario es 17 de octubre de 2026. Para evitar una contradiccion publica, se mantiene 17 de octubre y se incorpora el contenido del programa sin repetir "Dia 10".

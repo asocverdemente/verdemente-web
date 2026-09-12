@@ -1,0 +1,6 @@
+ACTUALIZACIÓN FORMULARIOS · COMIDA
+
+- Construcción en tierra: se añade opción de participar en la comida vinculada al taller.
+- Al marcarla, se muestra únicamente en el formulario: “CONTRIBUCIÓN RECOMENDADA POR PERSONA: 10 €”.
+- Se añade campo de necesidades alimentarias (alergias, intolerancias, opción vegetariana/vegana u otras observaciones).
+- Construcción en piedra seca: cuando se active su formulario al confirmar fecha, deberá incorporar exactamente el mismo bloque de comida y necesidades alimentarias.

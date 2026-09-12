@@ -1,0 +1,13 @@
+ACTUALIZACIÓN DE TÍTULO · 12/09/2026
+
+El taller antes denominado “Construcción en tierra” pasa a denominarse:
+
+“Arquitectura tradicional: cómo construir con materiales del territorio”
+
+Se actualiza el título en:
+- saberes-del-territorio.html
+- agenda.html
+- adobe-y-arquitectura-de-tierra.html
+- inscripcion-construccion-tierra.html
+
+Se mantienen las mismas URLs para no romper enlaces existentes.
