@@ -1,0 +1,12 @@
+ACTUALIZACIÓN VERDEMENTE · 12/09/2026
+
+- La página Saberes del Territorio incorpora botones de inscripción en los cuatro talleres con fecha confirmada.
+- Formularios activos:
+  * inscripcion-campanas.html
+  * inscripcion-alfareria.html
+  * inscripcion-construccion-tierra.html
+  * inscripcion-queso.html
+- Construcción en piedra seca, Micología y Memoria alimentaria siguen sin botón hasta confirmar fecha.
+- Elaboración artesanal de queso permanece como último taller, cierre del proyecto.
+- Se elimina de la página pública de las Jornadas cualquier mención a 10 €.
+- Los 10 € aparecen únicamente dentro del formulario de campanas/comida como: «CONTRIBUCIÓN RECOMENDADA POR PERSONA: 10 €».
