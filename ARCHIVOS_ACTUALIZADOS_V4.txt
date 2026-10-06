@@ -36,3 +36,9 @@ Apps Script:
 V5:
 - registration-status.js fuerza aforo máximo: 20 en piedra seca y 30 en los demás, aunque el Apps Script devuelva otro valor.
 - styles-extra-plazas.css ajusta la intermitencia discreta para que se perciba mejor.
+
+
+V6:
+- styles-extra-plazas.css: sin intermitencia en plazas disponibles; destacado solo en negrita/tamaño.
+- styles-extra-plazas.css: recorte más agresivo y overlay en la tarjeta de memoria alimentaria para que no asomen letras de la imagen.
+- saberes-del-territorio.html y agricultura-tradicional-y-memoria-alimentaria.html: se elimina la clase availability-pulse por defecto.

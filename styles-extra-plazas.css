@@ -75,3 +75,36 @@
 .registration-state.availability-pulse{
   animation:plazasPulseSoft 1.8s ease-in-out infinite;
 }
+
+
+/* Ajuste v6: sin intermitencia; plazas destacadas en negrita y algo mayores */
+.registration-state{font-weight:900;font-size:.9rem;letter-spacing:.04em}
+.saber-card .registration-state{font-size:.84rem}
+.registration-state.availability-pulse{
+  animation:none !important;
+  padding:3px 8px;
+  border:1px solid var(--rust);
+  background:rgba(200,100,67,.08);
+}
+@media(prefers-reduced-motion:reduce){
+  .registration-state.availability-pulse{animation:none !important}
+}
+
+/* Ajuste v6 portada memoria alimentaria: evitar que se vean letras incrustadas de la imagen */
+.memory-card .thumb{
+  position:relative;
+  background-position:100% 50% !important;
+  background-size:270% auto !important;
+}
+.memory-card .thumb::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg, rgba(0,0,0,.58) 0%, rgba(0,0,0,.34) 38%, rgba(0,0,0,.10) 70%, rgba(0,0,0,.08) 100%);
+  pointer-events:none;
+}
+.memory-card h3,
+.memory-card .saber-subtitle,
+.memory-card .meta,
+.memory-card .eyebrow,
+.memory-card .actions{position:relative; z-index:1}
