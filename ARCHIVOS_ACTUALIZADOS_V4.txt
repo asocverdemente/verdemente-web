@@ -31,3 +31,8 @@ Disponibilidad de plazas:
 Apps Script:
 - Copiar el contenido de _apps_script/AppsScript_Inscripciones_COMPLETO.gs en el proyecto vinculado a la hoja.
 - Guardar y actualizar la implementación web si Google Apps Script lo solicita.
+
+
+V5:
+- registration-status.js fuerza aforo máximo: 20 en piedra seca y 30 en los demás, aunque el Apps Script devuelva otro valor.
+- styles-extra-plazas.css ajusta la intermitencia discreta para que se perciba mejor.

@@ -65,3 +65,13 @@
   background-position:78% 53% !important;
   background-size:205% auto !important;
 }
+
+
+/* Ajuste v5: intermitencia discreta, pero perceptible */
+@keyframes plazasPulseSoft{
+  0%,100%{opacity:1; box-shadow:0 0 0 rgba(200,100,67,0)}
+  50%{opacity:.82; box-shadow:0 0 0 1px rgba(200,100,67,.18)}
+}
+.registration-state.availability-pulse{
+  animation:plazasPulseSoft 1.8s ease-in-out infinite;
+}

@@ -3,19 +3,30 @@
   var endpoint=window.VERDEMENTE_FORM_ENDPOINT||'';
   if(!endpoint) return;
 
+  var CAPACITY_BY_ACTIVITY={
+    piedra_seca:20,
+    memoria_alimentaria:30,
+    alfareria:30,
+    arquitectura_tierra:30,
+    queso:30
+  };
+
   function plural(n){return n===1?'plaza disponible':'plazas disponibles';}
+  function getConfiguredCapacity(activity){ return CAPACITY_BY_ACTIVITY[activity] || 30; }
+
   function requestStatus(node){
     var activity=node.getAttribute('data-activity-id');
     if(!activity) return;
     var cb='verdementeStatus_'+Date.now().toString(36)+'_'+Math.random().toString(36).slice(2,9);
     var script=document.createElement('script');
     window[cb]=function(data){
-      try{ update(node,data||{}); }finally{
+      try{ update(node,data||{},activity); }finally{
         try{ delete window[cb]; }catch(e){ window[cb]=undefined; }
         if(script.parentNode) script.parentNode.removeChild(script);
       }
     };
     script.onerror=function(){
+      update(node,{},activity);
       try{ delete window[cb]; }catch(e){ window[cb]=undefined; }
       if(script.parentNode) script.parentNode.removeChild(script);
     };
@@ -24,12 +35,13 @@
     document.head.appendChild(script);
   }
 
-  function update(node,data){
-    if(!data || data.ok===false) return;
-    var capacity=parseInt(data.capacity,10)||30;
-    var confirmed=parseInt(data.confirmed,10)||0;
-    var remaining=Math.max(0,typeof data.remaining==='number'?data.remaining:(capacity-confirmed));
-    var full=!!data.full || remaining<=0;
+  function update(node,data,activity){
+    var configuredCapacity=getConfiguredCapacity(activity || node.getAttribute('data-activity-id'));
+    var confirmed=parseInt(data.confirmed,10);
+    if(isNaN(confirmed) || confirmed < 0) confirmed=0;
+    var capacity=configuredCapacity;
+    var remaining=Math.max(0, capacity-confirmed);
+    var full=remaining<=0;
     var label=full?'Plazas completas · lista de espera abierta':(remaining<=3?'¡Últimas '+remaining+' '+plural(remaining)+'!':remaining+' '+plural(remaining));
     var states=node.querySelectorAll('.registration-state');
     var buttons=node.querySelectorAll('.registration-button');
