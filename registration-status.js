@@ -30,11 +30,15 @@
     var confirmed=parseInt(data.confirmed,10)||0;
     var remaining=Math.max(0,typeof data.remaining==='number'?data.remaining:(capacity-confirmed));
     var full=!!data.full || remaining<=0;
-    var label=full?'Plazas completas · lista de espera abierta':(remaining<=3?'Últimas '+remaining+' '+plural(remaining):remaining+' '+plural(remaining));
+    var label=full?'Plazas completas · lista de espera abierta':(remaining<=3?'¡Últimas '+remaining+' '+plural(remaining)+'!':remaining+' '+plural(remaining));
     var states=node.querySelectorAll('.registration-state');
     var buttons=node.querySelectorAll('.registration-button');
     var notes=node.querySelectorAll('.capacity-note');
-    for(var i=0;i<states.length;i++) states[i].textContent=label;
+    for(var i=0;i<states.length;i++){
+      states[i].textContent=label;
+      states[i].classList.toggle('availability-pulse',!full);
+      states[i].classList.toggle('availability-full',full);
+    }
     for(var j=0;j<buttons.length;j++) buttons[j].textContent=full?'APUNTARME A LA LISTA DE ESPERA':'INSCRIBIRME';
     for(var k=0;k<notes.length;k++){
       notes[k].textContent=full

@@ -52,9 +52,18 @@ CAMBIOS INCLUIDOS
 - Correo automático ampliado: instrucciones previas, comida, WhatsApp, otros talleres,
   Asociación VerdeMente enlazada y financiación Junta de Extremadura.
 - Contador dinámico de plazas: disponibles / últimas plazas / lista de espera.
-- Cupo configurado en 30 plazas para los talleres activos.
+- Aforo configurado en 30 plazas para los talleres activos, salvo Construcción en piedra seca, con máximo de 20 plazas.
 
 NOTA
 ====
 La imagen de Mónica incluida en el ZIP es un recorte de la captura enviada. Si dispones del original,
 conviene sustituirla manteniendo el mismo nombre de archivo para mejorar la calidad visual.
+
+
+ACTUALIZACIÓN V2 · 06/10/2026
+- Aforo general de talleres: 30 plazas.
+- Excepción: Construcción en piedra seca: máximo 20 plazas.
+- La portada de Saberes muestra Memoria alimentaria y cocina tradicional con el subtítulo «Recolección y aprovechamiento tradicional de frutos del territorio».
+- La ficha de Memoria alimentaria muestra completa y en gran formato la imagen de bellotas facilitada por Miguel Ángel Llorente.
+- El contador muestra las plazas restantes y pulsa suavemente mientras haya disponibilidad; al completarse queda estático y ofrece lista de espera.
+- IMPORTANTE: tras pegar el Apps Script actualizado, guardar y volver a IMPLEMENTAR la aplicación web para que el cupo de 20 en piedra seca y el contador queden activos.
