@@ -67,3 +67,15 @@ ACTUALIZACIÓN V2 · 06/10/2026
 - La ficha de Memoria alimentaria muestra completa y en gran formato la imagen de bellotas facilitada por Miguel Ángel Llorente.
 - El contador muestra las plazas restantes y pulsa suavemente mientras haya disponibilidad; al completarse queda estático y ofrece lista de espera.
 - IMPORTANTE: tras pegar el Apps Script actualizado, guardar y volver a IMPLEMENTAR la aplicación web para que el cupo de 20 en piedra seca y el contador queden activos.
+
+
+ACTUALIZACIÓN V4 · 06/10/2026
+- Aforo general: máximo 30 plazas.
+- Construcción en piedra seca: máximo 20 plazas.
+- Aviso de plazas: intermitencia discreta (opacidad suave, sin resplandor ni zoom).
+- Memoria alimentaria: 7/11/2026, Montánchez, encuentro 9:30 en el inicio de la Ruta del Castañar de Montánchez.
+- Memoria alimentaria: se incorporan bellotas y castañas en la descripción.
+- Imagen de memoria alimentaria: escena de cocina tradicional al fuego; no se usa la imagen de Miguel.
+- Arquitectura tradicional: se sustituye la imagen por la fotografía enviada de entramado de madera y tierra.
+
+IMPORTANTE: sube también styles-extra-plazas.css, registration-status.js y las dos imágenes nuevas de assets/img/.

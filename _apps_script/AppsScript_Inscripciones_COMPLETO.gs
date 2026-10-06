@@ -20,7 +20,7 @@ const ACTIVITIES = {
     name: 'Construcción en piedra seca', date: '24 de octubre de 2026', place: 'Arroyomolinos de Montánchez', capacity: 20
   },
   memoria_alimentaria: {
-    name: 'Memoria alimentaria y cocina tradicional', date: '7 de noviembre de 2026', place: 'Montánchez', capacity: 30
+    name: 'Memoria alimentaria y cocina tradicional', date: '7 de noviembre de 2026', place: 'Montánchez', capacity: 30, meeting: '9:30 · inicio de la Ruta del Castañar de Montánchez'
   },
   arquitectura_tierra: {
     name: 'Arquitectura tradicional: cómo construir con materiales del territorio', date: '21 de noviembre de 2026', place: 'Alcuéscar', capacity: 30
@@ -158,7 +158,7 @@ function sendRegistrationEmail_(to, personName, meta, waitlist, duplicate, waitP
     'Hemos recibido tu inscripción en ' + (meta.name || 'la actividad') + '.', '',
     statusText, '',
     'Fecha: ' + (meta.date || ''),
-    'Lugar: ' + (meta.place || ''), '',
+    'Lugar: ' + (meta.place || ''), meta.meeting ? 'Punto de encuentro: ' + meta.meeting : '', '',
     'Unos días antes del curso recibirás por correo las instrucciones detalladas sobre el lugar y la hora exacta de encuentro, junto con información práctica para la jornada y las alternativas previstas para la comida.', '',
     whatsappText, '',
     '¿Te interesan otros talleres? Consulta el programa de Saberes del Territorio: ' + workshopsUrl, '',
@@ -169,7 +169,7 @@ function sendRegistrationEmail_(to, personName, meta, waitlist, duplicate, waitP
   const htmlBody = '<p>Hola ' + person + ',</p>' +
     '<p>Hemos recibido tu inscripción en <strong>' + activity + '</strong>.</p>' +
     '<p>' + statusHtml + '</p>' +
-    '<p>📅 <strong>Fecha:</strong> ' + date + '<br>📍 <strong>Lugar:</strong> ' + place + '</p>' +
+    '<p>📅 <strong>Fecha:</strong> ' + date + '<br>📍 <strong>Lugar:</strong> ' + place + (meta.meeting ? '<br>🕤 <strong>Punto de encuentro:</strong> ' + escapeHtml_(meta.meeting) : '') + '</p>' +
     '<p>Unos días antes del curso recibirás por correo las <strong>instrucciones detalladas sobre el lugar y la hora exacta de encuentro</strong>, junto con información práctica para la jornada y las <strong>alternativas previstas para la comida</strong>.</p>' +
     '<p>' + escapeHtml_(whatsappText) + '</p>' +
     '<p>👉 <strong>¿Te interesan otros talleres?</strong><br><a href="' + workshopsUrl + '">Consulta el programa de Saberes del Territorio y las próximas actividades</a>.</p>' +

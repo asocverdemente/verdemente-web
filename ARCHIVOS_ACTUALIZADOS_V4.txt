@@ -1,0 +1,33 @@
+SABERES DEL TERRITORIO · ACTUALIZACIÓN V4 · 06/10/2026
+
+Subir/reemplazar en el repositorio:
+- saberes-del-territorio.html
+- agricultura-tradicional-y-memoria-alimentaria.html
+- adobe-y-arquitectura-de-tierra.html
+- inscripcion-memoria-alimentaria.html
+- inscripcion-piedra-seca.html
+- inscripcion-construccion-tierra.html
+- registration-status.js
+- styles-extra-plazas.css
+- assets/img/memoria-alimentaria-cocina.png
+- assets/img/arquitectura-tradicional-monica.jpg
+
+Mantener también los demás HTML incluidos en el ZIP si se quiere reemplazar el paquete completo.
+
+Aforos:
+- Construcción en piedra seca: 20 plazas.
+- Resto de talleres: máximo 30 plazas.
+
+Memoria alimentaria:
+- 7 noviembre 2026 · Montánchez.
+- Encuentro 9:30 · inicio de la Ruta del Castañar de Montánchez.
+- Bellotas y castañas incluidas en la descripción.
+- Imagen de cocina tradicional al fuego; no se usa la imagen de Miguel.
+
+Disponibilidad de plazas:
+- Intermitencia discreta por opacidad, sin resplandor ni zoom.
+- El contador se alimenta del Apps Script/hoja de inscripciones.
+
+Apps Script:
+- Copiar el contenido de _apps_script/AppsScript_Inscripciones_COMPLETO.gs en el proyecto vinculado a la hoja.
+- Guardar y actualizar la implementación web si Google Apps Script lo solicita.

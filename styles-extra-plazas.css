@@ -9,15 +9,14 @@
 
 /* ===== Saberes · aviso vivo de plazas ===== */
 @keyframes plazasPulse{
-  0%,100%{opacity:1;transform:scale(1);box-shadow:0 0 0 rgba(232,121,78,0)}
-  50%{opacity:.48;transform:scale(1.025);box-shadow:0 0 18px rgba(232,121,78,.34)}
+  0%,100%{opacity:1}
+  50%{opacity:.68}
 }
 .registration-state.availability-pulse{
   padding:3px 8px;
   border:1px solid var(--rust);
-  background:rgba(200,100,67,.09);
-  animation:plazasPulse 1.25s ease-in-out infinite;
-  transform-origin:left center;
+  background:rgba(200,100,67,.08);
+  animation:plazasPulse 2.4s ease-in-out infinite;
 }
 .registration-state.availability-full{
   padding:3px 8px;
@@ -59,4 +58,10 @@
 }
 @media(prefers-reduced-motion:reduce){
   .registration-state.availability-pulse{animation:none}
+}
+
+/* La imagen de memoria alimentaria se recorta para mostrar la mano, el cucharón y la olla, sin texto incrustado. */
+.memory-card .thumb{
+  background-position:78% 53% !important;
+  background-size:205% auto !important;
 }
