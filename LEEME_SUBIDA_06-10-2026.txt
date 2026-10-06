@@ -1,0 +1,60 @@
+ACTUALIZACIÓN SABERES DEL TERRITORIO · 06/10/2026
+
+CONTENIDO DEL ZIP
+=================
+
+ARCHIVOS PARA SUBIR AL REPOSITORIO GITHUB (raíz):
+- saberes-del-territorio.html
+- agricultura-tradicional-y-memoria-alimentaria.html
+- adobe-y-arquitectura-de-tierra.html
+- alfareria.html
+- piedra-seca.html
+- elaboracion-artesanal-de-queso.html
+- inscripcion-alfareria.html
+- inscripcion-piedra-seca.html
+- inscripcion-memoria-alimentaria.html  [NUEVO]
+- inscripcion-construccion-tierra.html
+- inscripcion-queso.html
+- registration-status.js
+- registration-form.js                 [NUEVO]
+- styles-extra-plazas.css             [NUEVO]
+
+ARCHIVOS PARA SUBIR EN assets/img/:
+- memoria-alimentaria-bellotas.jpg      [NUEVO]
+- arquitectura-tradicional-monica.jpg   [NUEVO]
+
+APPS SCRIPT (NO SE SUBE A GITHUB PARA ACTIVARLO):
+- _apps_script/AppsScript_Inscripciones_COMPLETO.gs
+  Copiar su contenido en el proyecto Apps Script vinculado a la hoja de inscripciones.
+
+PASOS
+=====
+1. Sube/reemplaza los archivos web respetando las rutas.
+2. Abre la hoja "Inscripciones Saberes del Territorio 2026" > Extensiones > Apps Script.
+3. Haz una copia del código actual por seguridad.
+4. Sustituye el código por AppsScript_Inscripciones_COMPLETO.gs.
+5. Implementar > Administrar implementaciones > editar la implementación web existente > Nueva versión > Implementar.
+   Si editas la implementación existente, la URL del endpoint debería conservarse.
+6. Comprueba que form-config.js sigue apuntando a la URL /exec correcta.
+7. Haz una inscripción de prueba y confirma:
+   - entrada en la hoja;
+   - Estado = Confirmada / Lista de espera;
+   - correo automático;
+   - contador de plazas en la web.
+
+CAMBIOS INCLUIDOS
+=================
+- Memoria alimentaria y cocina tradicional: 7 noviembre 2026, Montánchez.
+- Subtítulo: Recolección y aprovechamiento tradicional de frutos del territorio.
+- Contenidos de bellota resumidos para web e imagen aportada.
+- Arquitectura tradicional: programa completo y perfil de Mónica Bajalance Moreta.
+- Formularios con consentimiento opcional para grupo temporal de WhatsApp.
+- Correo automático ampliado: instrucciones previas, comida, WhatsApp, otros talleres,
+  Asociación VerdeMente enlazada y financiación Junta de Extremadura.
+- Contador dinámico de plazas: disponibles / últimas plazas / lista de espera.
+- Cupo configurado en 30 plazas para los talleres activos.
+
+NOTA
+====
+La imagen de Mónica incluida en el ZIP es un recorte de la captura enviada. Si dispones del original,
+conviene sustituirla manteniendo el mismo nombre de archivo para mejorar la calidad visual.

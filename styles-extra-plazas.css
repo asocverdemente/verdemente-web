@@ -1,0 +1,7 @@
+
+
+/* ===== Saberes · disponibilidad de plazas ===== */
+.registration-state{display:inline-block;margin-top:5px;color:var(--rust-bright);font-weight:800}
+.saber-card .registration-state{font-size:.78rem;letter-spacing:.06em}
+.capacity-note{transition:opacity .2s ease}
+.submit:disabled{opacity:.55;cursor:wait}
