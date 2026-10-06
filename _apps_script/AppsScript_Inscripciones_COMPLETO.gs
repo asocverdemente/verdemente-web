@@ -17,7 +17,7 @@ const ACTIVITIES = {
     name: 'Alfarería', date: '17 de octubre de 2026', place: 'Arroyo de la Luz', capacity: 30
   },
   piedra_seca: {
-    name: 'Construcción en piedra seca', date: '24 de octubre de 2026', place: 'Arroyomolinos de Montánchez', capacity: 30
+    name: 'Construcción en piedra seca', date: '24 de octubre de 2026', place: 'Arroyomolinos de Montánchez', capacity: 20
   },
   memoria_alimentaria: {
     name: 'Memoria alimentaria y cocina tradicional', date: '7 de noviembre de 2026', place: 'Montánchez', capacity: 30

@@ -5,3 +5,58 @@
 .saber-card .registration-state{font-size:.78rem;letter-spacing:.06em}
 .capacity-note{transition:opacity .2s ease}
 .submit:disabled{opacity:.55;cursor:wait}
+
+
+/* ===== Saberes · aviso vivo de plazas ===== */
+@keyframes plazasPulse{
+  0%,100%{opacity:1;transform:scale(1);box-shadow:0 0 0 rgba(232,121,78,0)}
+  50%{opacity:.48;transform:scale(1.025);box-shadow:0 0 18px rgba(232,121,78,.34)}
+}
+.registration-state.availability-pulse{
+  padding:3px 8px;
+  border:1px solid var(--rust);
+  background:rgba(200,100,67,.09);
+  animation:plazasPulse 1.25s ease-in-out infinite;
+  transform-origin:left center;
+}
+.registration-state.availability-full{
+  padding:3px 8px;
+  border:1px solid #79503e;
+  opacity:.9;
+}
+.saber-card .saber-subtitle{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.02rem;
+  line-height:1.24;
+  color:#d8c7b5;
+  margin:-2px 0 9px;
+}
+.memory-detail-layout{
+  grid-template-columns:minmax(0,.78fr) minmax(520px,1.22fr);
+  gap:46px;
+}
+.memory-poster-image{
+  position:relative;
+  top:auto;
+  background:#e8dfd2;
+}
+.memory-poster-image img{
+  width:100%;
+  height:auto !important;
+  object-fit:contain;
+}
+.memory-poster-caption{
+  margin:0;
+  padding:10px 14px;
+  color:var(--muted);
+  font-size:.76rem;
+  letter-spacing:.05em;
+  border-top:1px solid var(--line);
+}
+@media(max-width:900px){
+  .memory-detail-layout{grid-template-columns:1fr}
+  .memory-poster-image img{height:auto !important}
+}
+@media(prefers-reduced-motion:reduce){
+  .registration-state.availability-pulse{animation:none}
+}
