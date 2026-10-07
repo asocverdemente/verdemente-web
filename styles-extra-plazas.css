@@ -33,57 +33,81 @@
 }
 
 /* ===== Memoria alimentaria ===== */
-.memory-card{min-height:330px}
+.memory-card{min-height:330px;background:#17130f}
 .memory-card .thumb{
-  background-position:87% 52% !important;
-  background-size:205% auto !important;
-  opacity:.64 !important;
-  filter:brightness(1.22) saturate(1.02) contrast(.98) !important;
+  background-position:72% 52% !important;
+  background-size:cover !important;
+  opacity:.82 !important;
+  filter:brightness(1.12) saturate(1.02) contrast(1.00) !important;
 }
+/* Cubre las letras incrustadas de la imagen en la zona donde va el texto HTML. */
 .memory-card .thumb::after{
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(90deg,rgba(0,0,0,.18),rgba(0,0,0,.07) 48%,transparent 82%);
+  background:linear-gradient(90deg,
+    rgba(20,15,12,.99) 0%,
+    rgba(20,15,12,.98) 48%,
+    rgba(20,15,12,.90) 60%,
+    rgba(20,15,12,.35) 74%,
+    rgba(20,15,12,.05) 100%);
   pointer-events:none;
 }
 .memory-card:after{
-  background:linear-gradient(180deg,rgba(5,5,5,.02) 5%,rgba(5,5,5,.10) 45%,rgba(5,5,5,.72) 93%);
+  background:linear-gradient(180deg,rgba(5,5,5,.02) 5%,rgba(5,5,5,.08) 45%,rgba(5,5,5,.58) 94%);
 }
-.memory-card h3{font-size:2rem;color:var(--rust-bright) !important;margin-bottom:7px}
+.memory-card h3{font-size:2rem;color:var(--rust-bright) !important;margin-bottom:7px;max-width:62%}
 .memory-card .saber-subtitle{
-  font-size:1.08rem;
+  font-size:1.05rem;
   font-weight:700;
   letter-spacing:.015em;
   margin:0 0 10px;
-  max-width:92%;
+  max-width:60%;
 }
-.memory-card .actions{margin-top:16px}
+.memory-card .meta{max-width:60%}
+.memory-card .actions{margin-top:16px;max-width:62%}
 .memory-card h3,
 .memory-card .saber-subtitle,
 .memory-card .meta,
 .memory-card .eyebrow,
-.memory-card .actions{position:relative;z-index:2}
+.memory-card .actions{position:relative;z-index:3}
 
 /* ===== Micología y hierbas comestibles ===== */
 .mycology-card{min-height:330px;background:#141611}
 .mycology-card .thumb{
-  opacity:.52;
-  background-position:center 62% !important;
-  filter:saturate(.72) brightness(1.25) contrast(.94) !important;
+  opacity:.78;
+  background-position:72% 48% !important;
+  background-size:cover !important;
+  filter:saturate(.92) brightness(1.08) contrast(.98) !important;
+}
+.mycology-card .thumb::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(14,17,12,.98) 0%,rgba(14,17,12,.90) 48%,rgba(14,17,12,.35) 69%,transparent 100%);
+  pointer-events:none;
 }
 .mycology-card:after{
-  background:linear-gradient(180deg,rgba(7,10,6,.04) 8%,rgba(7,10,6,.18) 43%,rgba(7,10,6,.82) 94%);
+  background:linear-gradient(180deg,rgba(7,10,6,.02) 8%,rgba(7,10,6,.08) 43%,rgba(7,10,6,.65) 94%);
 }
-.mycology-card h3{font-size:2.05rem;color:#f2eadf;margin-bottom:8px}
+.mycology-card h3{font-size:2.05rem;color:#f2eadf;margin-bottom:8px;max-width:62%}
 .mycology-card .saber-subtitle{
   font-size:1rem;
   font-weight:700;
   letter-spacing:.035em;
   margin:0 0 10px;
   color:#d9dccb;
+  max-width:60%;
 }
-.mycology-card .meta{color:#e3ded1}
+.mycology-card .meta{color:#e3ded1;max-width:60%}
+.mycology-card h3,
+.mycology-card .saber-subtitle,
+.mycology-card .meta,
+.mycology-card .eyebrow{position:relative;z-index:3}
+
+.saberes-memory{margin-top:34px}
+.saberes-memory h3{margin:8px 0 10px}
+.saberes-memory p{max-width:900px}
 
 /* ===== Ficha Memoria alimentaria ===== */
 .memory-detail-layout{grid-template-columns:minmax(0,.78fr) minmax(520px,1.22fr);gap:46px}
@@ -96,8 +120,13 @@
   .memory-poster-image img{height:auto !important}
 }
 @media(max-width:620px){
-  .memory-card,.mycology-card{min-height:290px}
-  .memory-card .thumb{background-position:88% 52% !important;background-size:220% auto !important}
-  .memory-card .saber-subtitle{font-size:.96rem}
-  .mycology-card .saber-subtitle{font-size:.92rem}
+  .memory-card,.mycology-card{min-height:310px}
+  .memory-card .thumb{background-position:76% 50% !important;background-size:cover !important}
+  .memory-card .thumb::after{background:linear-gradient(90deg,rgba(20,15,12,.99) 0%,rgba(20,15,12,.96) 58%,rgba(20,15,12,.40) 82%,transparent 100%)}
+  .memory-card h3,.memory-card .saber-subtitle,.memory-card .meta,.memory-card .actions{max-width:72%}
+  .memory-card .saber-subtitle{font-size:.93rem}
+  .mycology-card .thumb{background-position:76% 50% !important}
+  .mycology-card .thumb::after{background:linear-gradient(90deg,rgba(14,17,12,.99) 0%,rgba(14,17,12,.94) 58%,rgba(14,17,12,.32) 82%,transparent 100%)}
+  .mycology-card h3,.mycology-card .saber-subtitle,.mycology-card .meta{max-width:72%}
+  .mycology-card .saber-subtitle{font-size:.9rem}
 }
