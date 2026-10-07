@@ -1,11 +1,8 @@
-
-
 /* ===== Saberes · disponibilidad de plazas ===== */
 .registration-state{display:inline-block;margin-top:5px;color:var(--rust-bright);font-weight:800}
 .saber-card .registration-state{font-size:.78rem;letter-spacing:.06em}
 .capacity-note{transition:opacity .2s ease}
 .submit:disabled{opacity:.55;cursor:wait}
-
 
 /* ===== Saberes · aviso vivo de plazas ===== */
 @keyframes plazasPulse{
@@ -66,7 +63,6 @@
   background-size:205% auto !important;
 }
 
-
 /* Ajuste v5: intermitencia discreta, pero perceptible */
 @keyframes plazasPulseSoft{
   0%,100%{opacity:1; box-shadow:0 0 0 rgba(200,100,67,0)}
@@ -75,7 +71,6 @@
 .registration-state.availability-pulse{
   animation:plazasPulseSoft 1.8s ease-in-out infinite;
 }
-
 
 /* Ajuste v6: sin intermitencia; plazas destacadas en negrita y algo mayores */
 .registration-state{font-weight:900;font-size:.9rem;letter-spacing:.04em}
@@ -108,3 +103,95 @@
 .memory-card .meta,
 .memory-card .eyebrow,
 .memory-card .actions{position:relative; z-index:1}
+
+/* ===== Ajuste v7 · tarjetas Saberes más claras ===== */
+.saberes-grid{
+  background:#47362d;
+  border-color:#47362d;
+}
+.saber-card{
+  background:#17130f;
+}
+.saber-card:hover{
+  background:#211913;
+}
+.saber-card .thumb{
+  opacity:.44;
+  filter:saturate(.98) brightness(1.18) contrast(.98);
+}
+.saber-card:hover .thumb{
+  opacity:.52;
+}
+.saber-card:after{
+  background:
+    linear-gradient(
+      180deg,
+      rgba(6,6,5,.02) 5%,
+      rgba(6,6,5,.18) 45%,
+      rgba(6,6,5,.72) 92%
+    );
+}
+.saber-card .meta{
+  color:#e3d5c6;
+}
+
+/* ===== MEMORIA ALIMENTARIA ===== */
+.memory-card .thumb{
+  background-position:84% 52% !important;
+  background-size:185% auto !important;
+  opacity:.70 !important;
+  filter:
+    brightness(1.24)
+    saturate(1.04)
+    contrast(.98) !important;
+}
+.memory-card .thumb::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.18) 0%,
+      rgba(0,0,0,.10) 35%,
+      rgba(0,0,0,.02) 72%,
+      transparent 100%
+    );
+  pointer-events:none;
+}
+.memory-card:after{
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5,5,5,.01) 5%,
+      rgba(5,5,5,.14) 48%,
+      rgba(5,5,5,.62) 92%
+    );
+}
+.memory-card .saber-subtitle{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.22rem;
+  line-height:1.12;
+  text-transform:uppercase;
+  font-weight:700;
+  letter-spacing:.025em;
+  color:#fff1e2;
+  margin:2px 0 12px;
+  max-width:95%;
+}
+.memory-card .meta{
+  color:#f0dfcf;
+}
+.memory-card h3{
+  color:#f07a4e !important;
+}
+@media(max-width:620px){
+  .memory-card .thumb{
+    background-position:86% 52% !important;
+    background-size:205% auto !important;
+  }
+  .memory-card .saber-subtitle{
+    font-size:1.02rem;
+    line-height:1.15;
+  }
+}
