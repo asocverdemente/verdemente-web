@@ -1,0 +1,18 @@
+SUBIR A LA RAIZ DEL REPOSITORIO:
+- agricultura-tradicional-y-memoria-alimentaria.html
+- inscripcion-memoria-alimentaria.html
+
+SUBIR DENTRO DE assets/img/:
+- todas-las-bellotas-se-comen.jpg
+
+BORRAR DE LA RAIZ SI APARECEN:
+- todas-las-bellotas-se-comen.jpg
+- todas-las-bellotas-se-comen (1).jpg
+
+NO BORRAR la copia correcta dentro de assets/img/.
+
+CAMBIOS INCLUIDOS:
+- Ficha del taller: imagen "Todas las bellotas se comen".
+- Crédito a Miguel Ángel Llorente encima de la imagen.
+- Orden de datos: Imparte -> Hora de encuentro -> Punto de encuentro.
+- Formulario: comida opcional vinculada al taller, 10 EUR por persona.
