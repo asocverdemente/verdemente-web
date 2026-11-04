@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-pending="true"]').forEach(link=>{link.addEventListener('click',event=>{event.preventDefault();alert('Falta añadir la URL real del formulario de inscripción en index.html.');});});
