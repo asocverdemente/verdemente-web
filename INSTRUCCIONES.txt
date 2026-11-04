@@ -1,0 +1,16 @@
+CAMBIO DE TITULO DEL TALLER - SABERES DEL TERRITORIO - 04/11/2026
+
+Titulo nuevo:
+Setas y plantas silvestres comestibles. Reconocimiento, recoleccion, transformacion
+
+Subir estos CINCO archivos HTML a la raiz del repositorio:
+https://github.com/asocverdemente/verdemente-web
+
+- saberes-del-territorio.html: titulo de la tarjeta
+- micologia-y-hierbas-comestibles.html: titulo en la pagina del taller
+- inscripcion-micologia.html: titulo en el formulario y campo oculto de actividad
+- agenda.html: titulo en la agenda
+- index.html: titulo en la portada
+
+NO cambiar estilos CSS, JS ni otros archivos. Los nombres de rutas se mantienen
+para evitar romper enlaces. No se ha alterado el funcionamiento del formulario.
