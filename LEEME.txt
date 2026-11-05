@@ -1,12 +1,18 @@
-ARCHIVOS PARA GITHUB
-====================
-1. Sustituir inscripcion-campanas.html
-2. Sustituir inscripcion-alfareria.html
-3. Subir como archivo nuevo proteccion-datos.html en la raíz del repositorio
+SABERES DEL TERRITORIO - AJUSTES SIN CAMBIAR LA PLANTILLA
 
-NO SUBIR A GITHUB COMO PARTE NECESARIA DEL FORMULARIO
-=====================================================
-apps-script-formularios.gs contiene el código actualizado para Google Apps Script.
-Hay que copiarlo en el Apps Script conectado a la hoja de inscripciones y volver a desplegar una nueva versión de la aplicación web.
+Subir SOLO:
+  script.js                         (sustituye el archivo existente en la raiz)
+  assets/img/saberes-portada-oficios.jpg (nuevo archivo en assets/img/)
 
-El endpoint de form-config.js puede seguir siendo el mismo si se edita la implementación existente.
+GitHub > verdemente-web > Add file > Upload files > Commit changes.
+Mantener la estructura de carpetas indicada. NO subir LEEME.txt si no se desea.
+
+Que hace el script:
+- Cambia la imagen de portada de Saberes del Territorio.
+- En la tarjeta de Alfareria, elimina el boton de inscripcion/lista de espera, y marca el taller celebrado.
+- En la ficha de Alfareria, retira el acceso a inscripcion y enlaza la entrevista confirmada de Cesar Rodriguez, y por separado la pestaña Shorts del canal.
+- No cambia styles.css, index.html ni otras tarjetas.
+
+IMPORTANTE: no se pudo verificar la URL del Short concreto de Alfareria. Por ello NO se ha inventado una URL de Short: se enlaza a la pestaña Shorts real del canal, y directamente a la entrevista larga contrastada. Cuando se disponga de la URL exacta del Short, basta con sustituir el enlace de la pestaña Shorts en script.js por el del video especifico.
+
+La imagen nueva es una composicion generada de los oficios tradicionales, no una fotografia documental del taller.
