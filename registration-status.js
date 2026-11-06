@@ -1,5 +1,24 @@
 (function(){
   'use strict';
+
+  // Cerrar automaticamente las tarjetas de los talleres ya celebrados.
+  // Las fechas se comparan con el dia local del visitante; el taller se
+  // mantiene disponible durante su propia fecha y se cierra al dia siguiente.
+  function cerrarTalleresCelebrados(){
+    var now=new Date();
+    var today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+    document.querySelectorAll('.saber-card[data-event-date]').forEach(function(card){
+      var p=card.getAttribute('data-event-date').split('-');
+      var workshopDay=new Date(Number(p[0]),Number(p[1])-1,Number(p[2]));
+      if(workshopDay < today){
+        card.removeAttribute('data-activity-id');
+        card.querySelectorAll('a.registration-button').forEach(function(a){ a.remove(); });
+        card.querySelectorAll('.registration-state').forEach(function(s){ s.remove(); });
+      }
+    });
+  }
+  cerrarTalleresCelebrados();
+
   var endpoint=window.VERDEMENTE_FORM_ENDPOINT||'';
   if(!endpoint) return;
 
@@ -51,7 +70,9 @@
       states[i].classList.toggle('availability-pulse',!full);
       states[i].classList.toggle('availability-full',full);
     }
-    for(var j=0;j<buttons.length;j++) buttons[j].textContent=full?'APUNTARME A LA LISTA DE ESPERA':'INSCRIBIRME';
+    // El boton de inscripcion mantiene el mismo texto aunque haya lista de espera.
+    // La asignacion efectiva de plazas sigue realizandose en el formulario/backend.
+    for(var j=0;j<buttons.length;j++) buttons[j].textContent='INSCRIBIRSE';
     for(var k=0;k<notes.length;k++){
       notes[k].textContent=full
         ?'El taller ha alcanzado el máximo de '+capacity+' participantes. Puedes enviar el formulario para incorporarte a la lista de espera. Si queda una plaza disponible, contactaremos contigo por orden de inscripción.'

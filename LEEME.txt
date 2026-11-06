@@ -1,18 +1,20 @@
-SABERES DEL TERRITORIO - AJUSTES SIN CAMBIAR LA PLANTILLA
+ACTUALIZACION BOTONES WEB SABERES DEL TERRITORIO - 6 NOVIEMBRE 2026
 
-Subir SOLO:
-  script.js                         (sustituye el archivo existente en la raiz)
-  assets/img/saberes-portada-oficios.jpg (nuevo archivo en assets/img/)
+ARCHIVOS PARA SUBIR A LA RAIZ DEL REPOSITORIO asocverdemente/verdemente-web:
+1) saberes-del-territorio.html
+2) registration-status.js
 
-GitHub > verdemente-web > Add file > Upload files > Commit changes.
-Mantener la estructura de carpetas indicada. NO subir LEEME.txt si no se desea.
+NO SUBIR LA CARPETA; SUBIR LOS DOS ARCHIVOS A LA RAIZ CONSERVANDO SUS NOMBRES.
+GitHub > Code > Add file > Upload files > arrastrar ambos > Commit changes.
 
-Que hace el script:
-- Cambia la imagen de portada de Saberes del Territorio.
-- En la tarjeta de Alfareria, elimina el boton de inscripcion/lista de espera, y marca el taller celebrado.
-- En la ficha de Alfareria, retira el acceso a inscripcion y enlaza la entrevista confirmada de Cesar Rodriguez, y por separado la pestaña Shorts del canal.
-- No cambia styles.css, index.html ni otras tarjetas.
+RESULTADO:
+- Talleres ya celebrados (campanas, alfareria y piedra seca): SOLO boton VER TALLER.
+- Talleres aun pendientes (memoria alimentaria, micologia, arquitectura y queso): boton INSCRIBIRSE.
+- Cuando un taller futuro ya haya pasado, desaparece automaticamente el boton de inscripcion en la pagina de los siete saberes (a partir del dia siguiente).
+- Aunque el cupo se complete, el boton seguira diciendo INSCRIBIRSE.
+- Si se completa el aforo, el sistema seguira anotando nuevas solicitudes en lista de espera; el texto del aviso explica esta circunstancia. No se modifica la gestion de plazas.
+- No se alteran los formularios, las URLs de las paginas, los contenidos de los talleres ni el diseno.
 
-IMPORTANTE: no se pudo verificar la URL del Short concreto de Alfareria. Por ello NO se ha inventado una URL de Short: se enlaza a la pestaña Shorts real del canal, y directamente a la entrevista larga contrastada. Cuando se disponga de la URL exacta del Short, basta con sustituir el enlace de la pestaña Shorts en script.js por el del video especifico.
-
-La imagen nueva es una composicion generada de los oficios tradicionales, no una fotografia documental del taller.
+Comprobar la web en:
+https://asocverdemente.github.io/verdemente-web/saberes-del-territorio.html
+Si ves la version antigua, prueba a recargar la pagina sin cache (Ctrl+F5).
