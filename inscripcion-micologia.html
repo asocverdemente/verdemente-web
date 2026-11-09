@@ -3,24 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Inscripción · Setas y plantas silvestres comestibles. Reconocimiento, recolección, transformación · VerdeMente">
-  <title>Inscripción · Setas y plantas silvestres comestibles. Reconocimiento, recolección, transformación · VerdeMente</title>
+  <meta name="description" content="Inscripción · Setas y plantas silvestres comestibles · Etnobotánica, alimentación y salud · VerdeMente">
+  <title>Inscripción · Setas y plantas silvestres comestibles · Etnobotánica, alimentación y salud · VerdeMente</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles-extra-plazas.css">
 </head>
 <body>
 <header class="site-header"><div class="container header-inner"><a href="index.html"><img class="brand-logo" src="assets/logo-verdemente.png" alt="VerdeMente I+D+i"></a><button class="menu-toggle" aria-label="Abrir menú">Menú</button><nav class="nav"><a href="index.html">Inicio</a><a href="verdemente.html">VerdeMente</a><a href="areas.html">Áreas de trabajo</a><a href="proyectos.html">Proyectos</a><a href="agenda.html">Agenda</a><a href="actualidad.html">Actualidad</a><a href="transparencia.html">Transparencia</a></nav></div></header>
 <main>
-<section class="registration-hero"><div class="container"><div class="kicker">PROYECTO SABERES DEL TERRITORIO</div><h1>SETAS Y PLANTAS SILVESTRES COMESTIBLES. RECONOCIMIENTO, RECOLECCIÓN, TRANSFORMACIÓN</h1><div class="event-meta">14 NOVIEMBRE 2026 · SIERRA DE LA MOSCA, CÁCERES</div><p><strong>Imparten:</strong> Pazzis Díez Ortega (micología) y Martina Sánchez (plantas silvestres comestibles).</p><p><strong>Duración:</strong> 8 horas, incluido el paseo micológico.</p></div></section>
+<section class="registration-hero"><div class="container"><div class="kicker">PROYECTO SABERES DEL TERRITORIO</div><h1>SETAS Y PLANTAS SILVESTRES COMESTIBLES</h1><p class="lead"><strong>Etnobotánica, alimentación y salud</strong></p><div class="event-meta">14 NOVIEMBRE 2026 · SIERRA DE LA MOSCA, CÁCERES</div><p><strong>Imparten:</strong> Pazzis Díez Ortega (micología) y Martina Sánchez (plantas silvestres comestibles).</p><p><strong>Duración:</strong> 8 horas, incluido el paseo micológico.</p></div></section>
 <div class="container form-wrap">
 <section class="form-card">
 <h2>Inscripción</h2>
 <p class="capacity-note">Completa tus datos para solicitar plaza. El taller es gratuito y práctico, abierto a todos los públicos. Las plazas se asignan por orden de inscripción.</p>
+<p><strong>Comida opcional:</strong> se ofrece la posibilidad de compartir una comida en una de las mejores queserías de Cáceres por <strong>10 € por persona</strong>. La comida es independiente del taller gratuito. Marca la casilla si quieres participar e indica tus alergias, intolerancias o preferencias alimentarias; las opciones especiales deberán confirmarse con la quesería.</p>
+<p><strong>Menú de la comida (10 € por persona):</strong> migas, ensalada de queso, tablas de queso y café.</p>
 <p><strong class="registration-state">Inscripción abierta</strong></p>
 <form class="registration-form" action="" method="post" target="form_sink" data-activity-id="micologia">
   <input type="hidden" name="actividad_id" value="micologia">
   <input type="hidden" name="request_token" value="">
-  <input type="hidden" name="actividad" value="Setas y plantas silvestres comestibles. Reconocimiento, recolección, transformación">
+  <input type="hidden" name="actividad" value="Setas y plantas silvestres comestibles. Etnobotánica, alimentación y salud">
   <input type="hidden" name="fecha_actividad" value="14/11/2026">
   <input type="hidden" name="lugar_actividad" value="Sierra de la Mosca, Cáceres">
   <div class="form-grid">
@@ -29,8 +31,8 @@
     <div class="field"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" autocomplete="tel" required></div>
     <div class="field full"><label for="municipio">Municipio de residencia</label><input id="municipio" name="municipio" autocomplete="address-level2" required></div>
   </div>
-  <label class="check"><input id="participa_comida" type="checkbox" name="participa_comida" value="Sí"><span>Me interesa participar también en la <strong>comida vinculada al taller</strong>.</span></label>
-  <div id="comida_detalle" class="price-note" hidden><div class="field full"><label for="necesidades_alimentarias">Necesidades alimentarias <span class="help">(alergias, intolerancias, opción vegetariana/vegana u otras observaciones)</span></label><textarea id="necesidades_alimentarias" name="necesidades_alimentarias" rows="3"></textarea></div></div>
+  <label class="check"><input id="participa_comida" type="checkbox" name="participa_comida" value="Sí"><span>Quiero participar en la <strong>comida opcional en una quesería de Cáceres (10 € por persona)</strong>.</span></label>
+  <div id="comida_detalle" class="price-note" hidden><div class="field full"><label for="necesidades_alimentarias">Alergias, intolerancias y necesidades alimentarias <span class="help">(opción vegetariana/vegana u otras observaciones)</span></label><textarea id="necesidades_alimentarias" name="necesidades_alimentarias" rows="3" placeholder="Ej.: alergia a frutos secos, intolerancia a la lactosa, opción vegana…"></textarea></div></div>
   <label class="check"><input type="checkbox" name="info_futuros_talleres" value="Sí"><span>Quiero recibir información sobre los próximos talleres de <strong>Saberes del Territorio</strong>.</span></label>
   <label class="check"><input type="checkbox" name="consentimiento_whatsapp" value="Sí"><span><strong>Autorizo a que mi número de teléfono se incluya, si se crea, en un grupo temporal de WhatsApp de participantes de esta actividad</strong>, destinado a facilitar cuestiones prácticas como compartir coche y, posteriormente, fotografías del encuentro.</span></label>
   <p class="tiny-note">La participación en el grupo de WhatsApp es voluntaria y no condiciona la participación en el taller.</p>
@@ -43,10 +45,12 @@
 <iframe name="form_sink" title="Envío de inscripción" style="display:none"></iframe>
 </section>
 <aside class="side">
-<h2>Setas y plantas silvestres comestibles. Reconocimiento, recolección, transformación</h2>
+<h2>Setas y plantas silvestres comestibles</h2>
+<p><strong>Etnobotánica, alimentación y salud</strong></p>
 <p><strong>14 noviembre 2026</strong> · Sierra de la Mosca, Cáceres.</p>
 <p><strong>Imparten:</strong> Pazzis Díez Ortega y Martina Sánchez.</p>
 <p><strong>Duración:</strong> 8 horas, incluido el paseo micológico.</p>
+<p><strong>Comida opcional:</strong> 10 € por persona en una quesería de Cáceres. Comunica alergias e intolerancias en el formulario.</p>
 <a class="cta" href="micologia-y-hierbas-comestibles.html">VOLVER A LA PRESENTACIÓN DEL TALLER</a>
 <div class="institutional-footer"><div class="institutional-group"><div class="institutional-label">Organizan</div><div class="institutional-logos"><img class="vm" src="assets/logo-verdemente.png" alt="VerdeMente I+D+i"><img class="uex" src="https://secgral.unex.es/wp-content/themes/uex/images/logos/logo-uex-blanco.webp" alt="Universidad de Extremadura"></div></div><div class="institutional-group"><div class="institutional-label">Financia</div><div class="junta-mark"><span class="junta-flag" aria-hidden="true"><i></i><i></i><i></i></span><span class="junta-name">JUNTA DE EXTREMADURA</span></div><div class="funding-line">Proyecto subvencionado por la Junta de Extremadura.</div></div></div>
 </aside>
